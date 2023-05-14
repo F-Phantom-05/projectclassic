@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Header */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212121;
+    color: #fff;
+    padding: 20px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.menu a:hover {
+    color: #ffc107;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.srch {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn {
+    background-color: #ffc107;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #ff8f00;
+}
+
+/* Main content */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    background-image: url('https://source.unsplash.com/1600x900/?nature');
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #ffc107;
+}
+
+.par {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cn {
+    background-color: #ffc107;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.cn:hover {
+    background-color: #ff8f00;
+}
+
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: white;
+}

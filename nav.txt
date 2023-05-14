@@ -1,0 +1,139 @@
+<nav>
+    <ul>
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="About.html"  >About</a></li>
+        <li><a href="contact.html" >Contact</a></li>
+        <li><a href="loginreg.html" >Account</a></li>
+        <li><a href="#" ><i class="fa-solid fa-cart-shopping"></i></a></li>
+        
+    </ul>
+    <div class="bx bx-menu" id="menu-icon"></div>
+</nav> 
+
+
+<div class="row">
+    <div class="row1">
+        <h1>Create Timeless Melodies With A Classic Instrument!</h1>
+        <p>Experience the enchantment of classical instruments and elevate your senses to a whole new level of musical delight.</p>
+        <a href="#" class="btn btn-warning">Explore Now &#8594;</a>
+    </div>
+    <div class="row1">
+        <img src="img/categ6.png"alt="">
+    </div>
+</div>
+
+
+li, a,  button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #000000, #ffffff ;
+    height: 100px;
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color: black;
+}
+
+
+
+
+<h2 class="title">Piano  Products</h2>
+    <div class="row d-flex ">
+        <div class="col w-100 p-3">
+            <img src="img/grand-piano.jpg" alt="" height="200px" >
+        <h4>Grand Piano</h4>
+        <div class="ratings">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p>&#8369;53,000.00</p>
+        </div>
+        <div class="col">
+            <img src="img/upright.jpg" alt="" height="200px" >
+        <h4>Upright Piano</h4>
+        <div class="ratings">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p>&#8369;299,000.00</p>
+        </div>
+        <div class="col w-100 p-3">
+            <img src="img/epiano.jpg" alt="" height="200px" >
+        <h4>Electric Guitar</h4>
+        <div class="ratings">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p>&#8369;12,350.00</p>
+        </div>
+    </div>
+    <h2 class="title">Violin Products</h2>
+    <div class="row">
+        <div class="col">
+            <img src="img/Five_String_Violin.jpg" alt="" height="200px" >
+        <h4>Five String Violin</h4>
+        <div class="ratings">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p>&#8369;2,999.00</p>
+        </div>
+        <div class="col">
+            <img src="img/baroque-violin.jpg" alt="" height="200px" >
+        <h4>Baroque Violin</h4>
+        <div class="ratings">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <p>&#8369;17,999.00</p>
+        </div>
+        <div class="col">
+            <img src="img/Eviolin.jpg" alt="" height="200px" >
+        <h4>Electric Violin</h4>
+        <div class="ratings">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <p>&#8369;4,000.00</p>
+        </div>
+    </div>
