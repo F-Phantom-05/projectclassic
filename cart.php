@@ -1,85 +1,99 @@
-<?php 
-
-    include_once("db/db_connection.php");
-    $conn = OpenCon();
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="img/logo2.jpg">
+<link rel="icon" href="img/logo2.jpg">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STRAVIPO</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/cart.css">
     
-
+    <style>
+         table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    th {
+        background-color: #f2f2f2;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    
+    tr:hover {
+        background-color: #e9e9e9;
+    }
+    </style>
 </head>
 <body style="background-image: url('img/bg.jpg');  background-repeat: no-repeat; 
 background-attachment: fixed; background-size: cover;">
     <header>
        
-       <img class="logo" src="img/logo1.png" alt="logo" width="450px" height="400px">
+    <a href="index.php"><img class="logo" src="img/logo1.png" alt="logo" width="450px" height="400px"></a>
        <nav>
         <ul class="nav_links">
             <li><a href="index.php" >Home</a></li>
             <li><a href="About.html"  >About</a></li>
             <li><a href="contacts.php" >Contact</a></li>
-            <li><a href="products.html" >Product</a></li>
-            
-            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href="products.php" >Product</a></li>
+            <li><a href="loginreg.php" >Login</a></li>
+            <li><a href="cart.php"><i class="fa-solid fa-cart-shopping"></i></a></li>
             
         </ul>
         
     </nav>      
     </header>
+     <table>
+     <tr>
+         <th>ID</th>
+         <th>Name</th>
+         <th>Price</th>
+         
+     </tr>
+<?php
+include "db/db_connection.php";
 
-<div class="container">
-                <table class="table table-bordered table-striped">
-                    <tbody>
-                        <tr>
-                            <th>Item Number</th><th>Item Name</th><th>Price</th><th></th>
-                        </tr>
-                        <tr>
-                            <th><?php echo $counter ?></th><th><?php echo $row['name']?></th><th><?php echo $row['price']?></th>
-                            <th><a href='cart_remove.php?id=<?php echo $row['id'] ?>'>Remove</a></th>
-                        </tr>
-                      
-                        <tr>
-                            <th></th><th>Total</th><th>Rs <?php echo $sum;?>/-</th><th><a href="success.php?id=<?php echo $user_id?>" class="btn btn-primary">Confirm Order</a></th>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+if(isset($_GET["delete_id"])) {
+    $delete_id = $_GET["delete_id"];
+    
+    // SQL query to delete the row with the provided ID
+    $delete_sql = "DELETE FROM product WHERE id = $delete_id";
+    
+    if ($conn->query($delete_sql) === TRUE) {
+        echo "Record deleted successfully.";
+    } else {
+        echo "Error deleting record: " . $conn->error;
+    }
+}
 
+$sql = "SELECT * FROM product";
+$result = $conn->query($sql);
 
-    <div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="footer-col-1">
-            <h2 style="color:rgb(247, 247, 247)">STRAVIPO</h2>
-            <p>At Stravipo, our purpose is to preserve the beauty of music history and  inspire the future of music
-                 with high-quality classic instruments that produce rich and soulful sounds.</p>
-                </div>
-        
-        <div class="footer-col-3">
-            <h3 style="text-align: center;">Follow us</h3>
-            <ul>
-                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
-                <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
-                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Youtube</a></li>
-            </ul>
-        </div>
-    </div>
-    <hr>
-    <p class="copy">Copyright © 2023. STRAVIPO. All Rights Reserved</p>
-    </div>
-</div>
- 
+if($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        echo "<tr>
+              <td>" . $row["id"] . "</td>
+              <td>" . $row["name"] . "</td>
+              <td>" . $row["price"] . "</td>
+              <td><a href='?delete_id=" . $row["id"] . "'class='btn btn-danger'><i class='fas fa-trash-alt'></i></a></td>
+              </tr>";
+    }
+}
+$conn->close();
+?>
+
+</table>
 </body>
 <script src="https://kit.fontawesome.com/428f90d8fe.js" crossorigin="anonymous"></script>
-
 </html>

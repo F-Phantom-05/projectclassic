@@ -18,15 +18,15 @@
 background-attachment: fixed; background-size: cover;">
     <header>
        
-       <img class="logo" src="img/logo1.png" alt="logo" width="450px" height="400px">
+    <a href="index.php"><img class="logo" src="img/logo1.png" alt="logo" width="450px" height="400px"></a>
        <nav>
         <ul class="nav_links">
             <li><a href="index.php" >Home</a></li>
             <li><a href="About.html"  >About</a></li>
             <li><a href="contacts.php" >Contact</a></li>
-            <li><a href="products.html" >Product</a></li>
-            
-            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href="products.php" >Product</a></li>
+            <li><a href="loginreg.php" >Login</a></li>
+            <li><a href="cart.php"><i class="fa-solid fa-cart-shopping"></i></a></li>
             
         </ul>
         
@@ -68,39 +68,18 @@ background-attachment: fixed; background-size: cover;">
     <div class="rows1 d-flex align-items-lg-start f mb-3">
         <div class="cols">
             <img src="img/categ1.png" alt="" height="200px" >
-        <h4>Banjo Guitar</h4>
-        <div class="ratings">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-        </div>
-        <p>&#8369;4,493</p>
+        <h4 style="text-align: center;">Banjo Guitar</h4 >
+       
         </div>
         <div class="cols">
             <img src="img/categ2.jpg" alt="" height="200px" >
-        <h4>Acoustic Guitar</h4>
-        <div class="ratings">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-        </div>
-        <p>&#8369;2,719</p>
+        <h4 style="text-align: center;">Acoustic Guitar</h4 >
+       
         </div>
         <div class="cols">
             <img src="img/categ4.png" alt="" height="200px" >
-        <h4>Electric Guitar</h4>
-        <div class="ratings">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-        </div>
-        <p>&#8369;4,000</p>
+        <h4 style="text-align: center;">Electric Guitar</h4 >
+        
         </div>
         
     </div>
@@ -108,78 +87,36 @@ background-attachment: fixed; background-size: cover;">
     <div class="rows1">
         <div class="cols">
             <img src="img/grand-piano.jpg" alt="" height="200px" >
-        <h4>Grand Piano</h4>
-        <div class="ratings">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-        </div>
-        <p>&#8369;53,000.00</p>
+        <h4 style="text-align: center;">Grand Piano</h4 >
+       
         </div>
         <div class="cols">
             <img src="img/upright.jpg" alt="" height="200px" >
-        <h4>Upright Piano</h4>
-        <div class="ratings">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-        </div>
-        <p>&#8369;299,000.00</p>
+        <h4 style="text-align: center;">Upright Piano</h4 >
+       
         </div>
         <div class="cols">
             <img src="img/epiano.jpg" alt="" height="200px" >
-        <h4>Electric Guitar</h4>
-        <div class="ratings">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-        </div>
-        <p>&#8369;12,350.00</p>
+        <h4 style="text-align: center;">Electric Guitar</h4 >
+       
         </div>
     </div>
     <h2 class="title">Violin Product</h2>
     <div class="rows1" id="violin">
         <div class="cols">
             <img src="img/Five_String_Violin.jpg" alt="" height="200px" >
-        <h4>Five String Violin</h4>
-        <div class="ratings">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-        </div>
-        <p>&#8369;2,999.00</p>
+        <h4 style="text-align: center;">Five String Violin</h4 >
+       
         </div>
         <div class="cols">
             <img src="img/baroque-violin.jpg" alt="" height="200px" >
-        <h4>Baroque Violin</h4>
-        <div class="ratings">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-        </div>
-        <p>&#8369;17,999.00</p>
+        <h4 style="text-align: center;">Baroque Violin</h4 >
+       
         </div>
         <div class="cols">
             <img src="img/Eviolin.jpg" alt="" height="200px" >
-        <h4>Electric Violin</h4>
-        <div class="ratings">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-        </div>
-        <p>&#8369;4,000.00</p>
+        <h4 style="text-align: center;">Electric Violin</h4 >
+        
         </div>
     </div>
     

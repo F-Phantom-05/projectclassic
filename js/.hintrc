@@ -3,6 +3,7 @@
     "development"
   ],
   "hints": {
+    "disown-opener": "off",
     "no-inline-styles": "off",
     "axe/name-role-value": [
       "default",
@@ -14,18 +15,8 @@
     "axe/parsing": [
       "default",
       {
-        "duplicate-id-active": "off",
         "duplicate-id-aria": "off"
       }
-    ],
-    "compat-api/css": [
-      "default",
-      {
-        "ignore": [
-          "width: fit-content"
-        ]
-      }
-    ],
-    "disown-opener": "off"
+    ]
   }
 }

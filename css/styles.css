@@ -1,0 +1,135 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+
+    height: 80px;
+    width: 100%;
+    background: #958de6;
+    position: fixed;
+}
+
+label.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100%;
+    line-height: 80px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 8px;
+    letter-spacing: 1px;
+}
+
+nav a{
+
+    color: white;
+    font-size: 18px;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 4px;
+}
+
+a.active, a:hover{
+    border: 1px solid rgb(48, 5, 59);
+    transition: 0.5s;
+
+}
+
+nav #icon{
+    float: right;
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#menu{
+
+    display: none;
+}
+
+@media(max-width: 1048px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 60px;
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav li{
+        font-size: 17px;
+    }
+
+    }
+
+@media(max-width: 942px){
+    nav #icon{
+        display: block;
+    }
+    .show{
+        position: 80vh;
+        width: 100%;
+        background: #958de6;
+        top: 80px;
+        text-align: center;
+        transition: all 0.5s;
+        left: -100%;
+    }
+}
+
+#menu:checked ~ .show{
+    margin-left: 100%;
+}
+nav li{
+    display: block;
+    margin: 50px 0;
+    line-height: 10px;
+}
+nav a {
+    font-size: 20px;
+}
+a.active, a:hover{
+    border: none;
+    color: aquamarine;
+}
+
+@media(max-width: 300px){
+    label.logo{
+        font-size: 10px;
+        padding-left: 10px;
+    }
+    nav #icon{
+        padding: 0;
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        border: 1px solid black;
+    }
+}
+
+section {
+    background-color: #958de6;
+    background-size: cover;
+    height: 100vh;
+}
